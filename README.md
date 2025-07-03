@@ -1,4 +1,5 @@
 # Multi-Dataset Customer Segmentation via Unsupervised RFM Learning
+
 In modern digital ecosystems, customer data originates from diverse channels such as web analytics, transactional logs, and e-commerce platforms. However, these datasets often exist in isolation, making it challenging for organizations to derive unified insights. This project addresses that gap by presenting a scalable, end-to-end unsupervised learning pipeline that standardizes core behavioral metrics (Recency, Frequency, Monetary) across multiple sources, enabling consistent, actionable customer segmentation.
 
 ## Overview
@@ -42,6 +43,22 @@ The datasets used in this project include:
    - **Avg. Session Duration**: Mean length of a session  
    - **Conversion Rate (%)**: Percentage of sessions resulting in a transaction  
    - **Transactions, Revenue, Quantity Sold**: E‑commerce performance metrics  
+
+## Project Workflow
+- **Data Ingestion & Cleaning**: Load raw datasets (web analytics, transactions, retail) and handle missing values or type conversions.
+- **RFM Feature Engineering**: Compute `Recency` (days since last event), `Frequency` (count of sessions/invoices), and `Monetary` (total spend) per user/customer.
+- **Feature Scaling**: Apply Z‑score standardization to ensure comparability across RFM features.
+- **Dimensionality Reduction & Visualization**:
+    - Use Principal Component Analysis (PCA) for 2D/3D projections.
+    - Apply t‑SNE for nonlinear embeddings to inspect cluster structure.
+- **Automated Clustering Parameter Tuning**: Inline search for optimal bandwidth in `MeanShift` and ε in `DBSCAN` to enforce four clusters.
+- **Clustering Algorithm Execution**: Run six methods (`K‑Means`, `Hierarchical`‑Ward, `DBSCAN`, `MeanShift`, `GMM`, `BIRCH`) on the scaled RFM data.
+- **Evaluation & Model Selection**:
+    - Compute `Silhouette Score`, `Davies–Bouldin Index`, `Calinski–Harabasz Index`, and `WCSS`.
+    - Plot metrics (including log‑scale bar chart) and select the best algorithm via rank‑sum aggregation.
+- **Cluster Assignment & Profiling**:
+   - Assign final labels back to both the user‑level RFM table and original transaction records.
+   - Generate segment profiles on RFM metrics.
 
 ## Key Features
 * **RFM Feature Engineering**: Computes Recency, Frequency, and Monetary metrics per user/customer.
