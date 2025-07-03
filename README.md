@@ -1,4 +1,5 @@
 # Multi-Dataset Customer Segmentation via Unsupervised RFM Learning
+In modern digital ecosystems, customer data originates from diverse channels such as web analytics, transactional logs, and e-commerce platforms. However, these datasets often exist in isolation, making it challenging for organizations to derive unified insights. This project addresses that gap by presenting a scalable, end-to-end unsupervised learning pipeline that standardizes core behavioral metrics (Recency, Frequency, Monetary) across multiple sources, enabling consistent, actionable customer segmentation.
 
 ## Overview
 This repository provides a unified, end-to-end pipeline for customer segmentation across multiple data sources (web analytics, transaction logs, and online retail records). By standardizing Recency–Frequency–Monetary (RFM) features and applying six unsupervised clustering algorithms with automated parameter tuning, the project delivers interpretable, actionable customer cohorts.
