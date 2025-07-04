@@ -44,6 +44,11 @@ The datasets used in this project include:
    - **Conversion Rate (%)**: Percentage of sessions resulting in a transaction  
    - **Transactions, Revenue, Quantity Sold**: E‑commerce performance metrics  
 
+These datasets can be found in **Kaggle**:
+1. [Online Retail II Data Set from ML Repository](https://www.kaggle.com/datasets/mathchi/online-retail-ii-data-set-from-ml-repository)
+2. [Transaction Data](https://www.kaggle.com/datasets/vipin20/transaction-data)
+3. [Web Analytics Dataset](https://www.kaggle.com/datasets/afranur/web-analytics-dataset)
+
 ## Project Workflow
 - **Data Ingestion & Cleaning**: Load raw datasets (web analytics, transactions, retail) and handle missing values or type conversions.
 - **RFM Feature Engineering**: Compute `Recency` (days since last event), `Frequency` (count of sessions/invoices), and `Monetary` (total spend) per user/customer.
@@ -69,7 +74,7 @@ The datasets used in this project include:
 * **Cluster Profiling**: Merges cluster labels back to original transactions and compute segment profiles on RFM metrics.
 
 ## Technologies Used
-- **Python 3.8+**: Core scripting language
+- **Python**: Core scripting language
 - **Jupyter Notebook**: Interactive development environment
 - **pandas**: Data loading and manipulation
 - **NumPy**: Numerical computing
