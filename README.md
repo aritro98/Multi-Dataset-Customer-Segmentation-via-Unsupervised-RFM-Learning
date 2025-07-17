@@ -124,3 +124,19 @@ These datasets can be found in **Kaggle**:
    * Segment profiles with RFM
 
 ## Results
+After running the clustering pipeline on each dataset, we will obtain:
+- **Dimensionality Reduction Visuals**:  
+  - **PCA Projections** (2D and 3D) illustrating how customers group in principal‐component space.  
+  - **t-SNE Embeddings** showing nonlinear neighborhood structure and validating cluster separability.
+
+- **Clustering Evaluation**:  
+  - A **summary table** of Silhouette Score, Davies–Bouldin Index, Calinski–Harabasz Index, and WCSS for all six algorithms.  
+  - A **log‑scale bar chart** comparing these metrics side‑by‑side to highlight trade‑offs in cluster cohesion, separation, and compactness.
+
+- **Selected Algorithm**: The algorithm with the best **aggregate rank** is automatically chosen and highlighted in the console output.
+
+- **Cluster Visualizations**: 2D scatter plots for each method with centroids marked, enabling visual inspection of cluster shapes.
+
+- **Final Cluster Profiles**:
+  - Tables summarizing each segment’s average Recency, Frequency, Monetary value, and domain‑specific KPIs (e.g., sessions, revenue, last engagement date).  
+  - Ability to merge cluster labels back into the original data for downstream analysis or export.
