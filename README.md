@@ -87,3 +87,16 @@ These datasets can be found in **Kaggle**:
 * **Automated Tuning**: Inline search routines determine optimal bandwidth for MeanShift and ε for DBSCAN.
 * **Multi-Metric Evaluation**: Compares Silhouette Score, Davies–Bouldin Index, Calinski–Harabasz Index, and WCSS to choose the best algorithm via aggregate ranking.
 * **Cluster Profiling**: Merges cluster labels back to original transactions and compute segment profiles on RFM metrics.
+
+## Installation and Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aritro98/Multi-Dataset-Customer-Segmentation-via-Unsupervised-RFM-Learning.git
+   cd Multi-Dataset-Customer-Segmentation-via-Unsupervised-RFM-Learning
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate    # On Linux/mac OS
+   venv\Scripts\activate     # On Windows
+   ```
