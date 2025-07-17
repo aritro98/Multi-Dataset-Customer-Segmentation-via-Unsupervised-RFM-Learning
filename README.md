@@ -128,15 +128,29 @@ After running the clustering pipeline on each dataset, we will obtain:
 - **Dimensionality Reduction Visuals**:  
   - **PCA Projections** (2D and 3D) illustrating how customers group in principal‐component space.  
   - **t-SNE Embeddings** showing nonlinear neighborhood structure and validating cluster separability.
-
 - **Clustering Evaluation**:  
   - A **summary table** of Silhouette Score, Davies–Bouldin Index, Calinski–Harabasz Index, and WCSS for all six algorithms.  
   - A **log‑scale bar chart** comparing these metrics side‑by‑side to highlight trade‑offs in cluster cohesion, separation, and compactness.
-
 - **Selected Algorithm**: The algorithm with the best **aggregate rank** is automatically chosen and highlighted in the console output.
-
 - **Cluster Visualizations**: 2D scatter plots for each method with centroids marked, enabling visual inspection of cluster shapes.
-
 - **Final Cluster Profiles**:
-  - Tables summarizing each segment’s average Recency, Frequency, Monetary value, and domain‑specific KPIs (e.g., sessions, revenue, last engagement date).  
+  - Tables summarizing each segment’s average Recency, Frequency, Monetary values.
   - Ability to merge cluster labels back into the original data for downstream analysis or export.
+
+## Future Scope
+- **System Integration**:
+  - Integrate segmentation model with CRM and marketing platforms.
+  - Set up automated data pipelines for continuous segmentation updates.
+- **Dashboard and Reporting**:
+  - Develop interactive dashboards for monitoring segmentation results.
+  - Create automated reports for stakeholders.
+- **Personalization and Strategy Implementation**:
+  - Design personalized marketing strategies based on customer segments.
+  - Implement targeted campaigns and promotions.
+  - Track the performance of these strategies.
+- **Monitoring and Refinement**:
+  - Continuously monitor the performance of the segmentation model.
+  - Collect feedback and adjust the model and strategies accordingly.
+- **Real‑Time Segmentation**: Integrate streaming data pipelines (e.g., Kafka, Airflow) to update RFM features and re‑segment customers continuously.
+- **Automated Cluster‑Count Selection**: Implement methods like the Gap Statistic or Bayesian nonparametrics to determine the optimal number of clusters per dataset dynamically.
+- **A/B Testing & Campaign Tracking**: Embed segmentation outputs into marketing workflows to run targeted experiments and measure lift in engagement and revenue.
