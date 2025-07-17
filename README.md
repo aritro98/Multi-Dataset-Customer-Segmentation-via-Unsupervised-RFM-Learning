@@ -68,14 +68,6 @@ These datasets can be found in **Kaggle**:
    - Assign final labels back to both the user‑level RFM table and original transaction records.
    - Generate segment profiles on RFM metrics.
 
-## Key Features
-* **RFM Feature Engineering**: Computes Recency, Frequency, and Monetary metrics per user/customer.
-* **Dimensionality Reduction**: Visualizes data using PCA (2D/3D) and t-SNE embeddings.
-* **Clustering Algorithms**: K-Means, Hierarchical (Ward), DBSCAN, MeanShift, Gaussian Mixture Models, and BIRCH each are tuned to four clusters.
-* **Automated Tuning**: Inline search routines determine optimal bandwidth for MeanShift and ε for DBSCAN.
-* **Multi-Metric Evaluation**: Compares Silhouette Score, Davies–Bouldin Index, Calinski–Harabasz Index, and WCSS to choose the best algorithm via aggregate ranking.
-* **Cluster Profiling**: Merges cluster labels back to original transactions and compute segment profiles on RFM metrics.
-
 ## Technologies Used
 - **Python**: Core scripting language
 - **Jupyter Notebook**: Interactive development environment
@@ -87,3 +79,11 @@ These datasets can be found in **Kaggle**:
 - **SQLAlchemy**: Database toolkit and ORM for Python
 - **PyMySQL**: MySQL database connector
 - **openpyxl**: Read/write Excel xlsx/xlsm files
+
+## Key Features
+* **RFM Feature Engineering**: Computes Recency, Frequency, and Monetary metrics per user/customer.
+* **Dimensionality Reduction**: Visualizes data using PCA (2D/3D) and t-SNE embeddings.
+* **Clustering Algorithms**: K-Means, Hierarchical (Ward), DBSCAN, MeanShift, Gaussian Mixture Models, and BIRCH each are tuned to four clusters.
+* **Automated Tuning**: Inline search routines determine optimal bandwidth for MeanShift and ε for DBSCAN.
+* **Multi-Metric Evaluation**: Compares Silhouette Score, Davies–Bouldin Index, Calinski–Harabasz Index, and WCSS to choose the best algorithm via aggregate ranking.
+* **Cluster Profiling**: Merges cluster labels back to original transactions and compute segment profiles on RFM metrics.
