@@ -108,6 +108,10 @@ These datasets can be found in **Kaggle**:
 2. Create and activate a virtual environment:
    ```bash
    python3 -m venv venv
-   source venv/bin/activate    # On Linux/mac OS
+   source venv/bin/activate  # On Linux/mac OS
    venv\Scripts\activate     # On Windows
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
    ```
