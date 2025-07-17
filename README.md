@@ -2,6 +2,17 @@
 
 In modern digital ecosystems, customer data originates from diverse channels such as web analytics, transactional logs, and e-commerce platforms. However, these datasets often exist in isolation, making it challenging for organizations to derive unified insights. This project addresses that gap by presenting a scalable, end-to-end unsupervised learning pipeline that standardizes core behavioral metrics (Recency, Frequency, Monetary) across multiple sources, enabling consistent, actionable customer segmentation.
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Dataset Description](#dataset-description)
+3. [Project Workflow](#project-workflow)
+4. [Technologies Used](#technologies-used)
+5. [Key Features](#key-features)
+6. [Installation and Setup](#installation-and-setup)
+7. [Usage](#usage)
+8. [Results](#results)
+9. [Future Scope](#future-scope)
+
 ## Overview
 This repository provides a unified, end-to-end pipeline for customer segmentation across multiple data sources (web analytics, transaction logs, and online retail records). By standardizing Recency–Frequency–Monetary (RFM) features and applying six unsupervised clustering algorithms with automated parameter tuning, the project delivers interpretable, actionable customer cohorts.
 
