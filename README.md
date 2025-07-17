@@ -117,7 +117,7 @@ These datasets can be found in **Kaggle**:
    ```
 
 ## Usage
-1. Run all the notebooks under the `notebook` directory.
+1. Run all the notebooks under the `notebooks` directory.
 2. View results:
    * Interactive and static plots for PCA, t-SNE, elbow curves, and cluster visualizations.
    * Printed evaluation metrics and chosen best algorithm.
